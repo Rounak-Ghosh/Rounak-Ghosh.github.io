@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="@ Rounak Ghosh" />
+  <meta name="keywords" content="Covid 19, Covid, Coronavirus, Github, Coronavirus Github, Rounak Ghosh" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <title>Covid-tainment</title>
+</head>
+
+<body onload="fetch()">
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo text-center mt-5">
+          <a href="/index2.html">
+            <img class="rotate" src="img/logo.png" alt="logo" /></a>
+          Covid-tainment
+        </h1>
+        <ul>
+          <li><a class="current" href="index2.html">World</a></li>
+          <li><a href="india.html">India</a></li>
+          <li><a target="index.html" href="developer.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1>
+            <span class="text-primary">Coronavirus :</span> The Silent Killer
+          </h1>
+          <p class="lead">
+            Coronavirus disease (COVID-19) is an infectious disease caused by
+            a newly discovered coronavirus. Most people infected with the
+            COVID-19 virus will experience mild to moderate respiratory
+            illness and recover without requiring special treatment. Older
+            people, and those with underlying medical problems like
+            cardiovascular disease, diabetes, chronic respiratory disease, and
+            cancer are more likely to develop serious illness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="home_info" class="bg-dark">
+    <div class="info-content">
+      <br />
+      <h1><span class="text-primary">Prevention</span></h1>
+      <h4 class="logo text-left mt-5">
+        To prevent infection and to slow transmission of COVID-19, do the
+        following:
+      </h4>
+      <br />
+      <ul>
+        <li>
+          Wash your hands regularly with soap and water, or clean them with
+          alcohol-based hand rub.
+        </li>
+        <li>Avoid touching your face.</li>
+        <li>Cover your mouth and nose when coughing or sneezing.</li>
+        <li>Stay home if you feel unwell.</li>
+        <li>
+          Refrain from smoking and other activities that weaken the lungs.
+        </li>
+        <li>
+          Practice physical distancing by avoiding unnecessary travel and
+          staying away from large groups of people.
+        </li>
+      </ul>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <h1><span class="text-primary">Symptoms</span></h1>
+      <h4 class="logo text-left mt-5">
+        Most common symptoms:
+      </h4>
+      <ul>
+        <li>fever.</li>
+        <li>dry cough.</li>
+        <li>tiredness.</li>
+        <li>Stay home if you feel unwell.</li>
+        <br />
+        <h4 class="logo text-left mt-5">
+          Less common symptoms:
+        </h4>
+        <li>aches and pains.</li>
+        <li>sore throat.</li>
+        <li>diarrhoea.</li>
+        <li>conjunctivitis.</li>
+        <li>headache.</li>
+        <li>loss of taste or smell.</li>
+        <li>a rash on skin, or discolouration of fingers or toes.</li>
+        <br />
+        <h4 class="logo text-left mt-5">
+          Serious symptoms:
+        </h4>
+        <li>difficulty breathing or shortness of breath.</li>
+        <li>chest pain or pressure.</li>
+        <li>tiredness.</li>
+        <li>loss of speech or movement.</li>
+        <br />
+        <p class="lead">
+          Seek immediate medical attention if you have serious symptoms.
+          Always call before visiting your doctor or health facility.<br />
+          People with mild symptoms who are otherwise healthy should manage
+          their symptoms at home.
+        </p>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1 class="text-center mt-5">Covid 19 Live Data in Table</h1>
+      <h3 class="text-left mt-2">World Statistics</h3>
+      <!--<table class="table table-hover">
+        <thead>
+          <tr style="color: white; background-color: teal;">
+            <th>Total Cases</th>
+            <th>Total Deaths</th>
+            <th>Total Recovered</th>
+          </tr>
+        </thead>-->
+
+        <body>
+          <tr style="color: black; background-color: wheat;" id="data"></tr>
+        </body>
+        <br />
+      </table>
+      <br>
+      <table class="table table-stripped table-bordered text-center" id="tval">
+        <tr style="background-color: rgb(218, 214, 214); color: black;">
+          <th>Country</th>
+          <th>Total Cases</th>
+          <th>Total Deaths</th>
+          <th>Total Recovered</th>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <div class="clr"></div>
+  <footer id="main-footer">
+    <h6 class="text-center">Developed by Rounak Ghosh &copy; 2020, All Rights Reserved</h6>
+  </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+  });
+  $(document).ready(function () {
+    init();
+
+    function init() {
+      var url = 'https://api.covid19api.com/summary';
+
+      var data = '';
+
+      $.get(url, function (data) {
+        //console.log(data.Global);
+        //Wrong data provided.
+
+        /*data = `
+                    <td>8,938,678</td>
+                    <td>467,114</td>
+                    <td>4,752,539</td>
+                `;*/
+
+        $('#data').html(data);
+      });
+    }
+  });
+
+  function fetch() {
+    $.get(
+      'https://api.covid19api.com/summary',
+
+      function (data) {
+        //console.log(data['Countries'].length);
+
+        var tval = document.getElementById('tval');
+
+        for (var i = 1; i < data['Countries'].length; i++) {
+            var x = tval.insertRow();
+            x.insertCell(0);
+            tval.rows[i].cells[0].innerHTML =
+              data['Countries'][i - 1]['Country'];
+            tval.rows[i].cells[0].style.background = '#B5A1E0';
+            tval.rows[i].cells[0].style.color = '#fff';
+
+            x.insertCell(1);
+            tval.rows[i].cells[1].innerHTML =
+              data['Countries'][i - 1]['TotalConfirmed'];
+            tval.rows[i].cells[1].style.background = '#FFA448';
+            tval.rows[i].cells[1].style.color = '#fff';
+
+            x.insertCell(2);
+            tval.rows[i].cells[2].innerHTML =
+              data['Countries'][i - 1]['TotalDeaths'];
+            tval.rows[i].cells[2].style.background = '#FF4444';
+            tval.rows[i].cells[2].style.color = '#fff';
+
+            x.insertCell(3);
+            tval.rows[i].cells[3].innerHTML =
+              data['Countries'][i - 1]['TotalRecovered'];
+            tval.rows[i].cells[3].style.background = '#24FF5B';
+            tval.rows[i].cells[3].style.color = '#fff';
+        }
+      }
+    );
+  }
+</script>
+
+</html>

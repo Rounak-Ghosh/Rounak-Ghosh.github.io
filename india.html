@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="@ Rounak Ghosh" />
+  <meta name="keywords" content="Covid 19, Covid, Coronavirus, Github, Coronavirus Github, Rounak Ghosh" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Covid-tainment | India</title>
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo text-center mt-5">
+          <a href="/home.html">
+            <img class="rotate" src="img/logo.png" alt="logo" /></a>
+          Covid-tainment
+        </h1>
+        <ul>
+          <li><a href="index2.html">World</a></li>
+          <li><a class="current" href="india.html">India</a></li>
+          <li><a target="blank" href="index.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="about-info" class="bg-dark py-3">
+    <div class="container">
+      <div class="info-left">
+        <h1 class="l-heading">
+          <span class="text-primary">India</span> Statistics
+        </h1>
+      </div>
+      <div class="info-right">
+        <h6>Central Helpline Number for corona-virus: - +91-11-23978046</h6>
+        <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">Click Here for Helpline
+          Numbers of States & Union Territories</a>
+        <br>
+      </div>
+    </div>
+
+    <div class="clr"></div>
+    <section id="testimonials" class="bg-dark">
+      <div class="container">
+        <h2 class="l-heading">What Doctors Say</h2>
+        <div class="testimonial bg-primary">
+          <img src="./img/doc2.jpg" alt="Dr. Nirav Shah" />
+          <p>
+            “Behind every single one of these numbers of cases is a person. Every one of these cases represents
+            someone’s
+            friend, spouse, mother, child, neighbor. … So we continue to ask that we treat them with the humanity that
+            they deserve.”
+            <br>― Dr. Nirav Shah
+          </p>
+        </div>
+
+        <div class="testimonial bg-primary">
+          <img src="./img/doc1.jpg" alt="Dr Prem Jagyasi" />
+          <p>
+            “During lockdown, we are surely locked but not down. Stay inspired.”
+            <br>― Dr Prem Jagyasi
+          </p>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+      <div class="container">
+        <h1 class="text-center mt-5">India Covid 19 Live Data</h1>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped text-center" id="tval">
+            <thead>
+              <tr style="color: white; background-color: teal;">
+                <th>Rank</th>
+                <th>State</th>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+                <th>Total Recovered</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+          </table>
+        </div>
+        <script src="india.js"></script>
+      </div>
+    </section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+      <p> &copy; Developed by Rounak Ghosh &copy; 2020, All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
