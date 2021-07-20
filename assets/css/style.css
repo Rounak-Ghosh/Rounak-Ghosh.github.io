@@ -11,6 +11,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background: #edc0bf;
+  background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
 }
 
 a {
@@ -867,7 +869,8 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #e0c3ce;
+  background: linear-gradient(90deg, #e0c3ce 0,#d0c7e0 78%);
 }
 
 .contact .info i {
@@ -876,7 +879,6 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -910,7 +912,8 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #d0c7e2;
+  background: linear-gradient(90deg, #d0c7e2 0,#c4caef 58%);
 }
 
 .contact .php-email-form .form-group {
