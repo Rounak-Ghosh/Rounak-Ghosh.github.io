@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    font-family: "Sora", sans-serif;
+    color: #272829;
+    background: #edc0bf;
+    background: linear-gradient(90deg, #edbfbf 0,#c4dfef 78%);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    background: #000000a8;
+    color: #ffffff;
+    padding: 20px;
+    
+  }
