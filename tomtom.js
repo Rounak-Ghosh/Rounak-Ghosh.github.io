@@ -362,7 +362,7 @@ var map = tt.map({
     zoom: 4,
     interactive: true,
     style: {
-        map: "basic_main", // basic_main, basic_night
+        map: "basic_night", // basic_main, basic_night
     },
 
     stylesVisibility: {
