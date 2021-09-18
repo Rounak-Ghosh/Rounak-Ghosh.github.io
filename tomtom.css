@@ -63,12 +63,3 @@ button:active {
     border-radius: 20px;
     border: transparent;
 }
-
-.footer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    text-align: center ;
-}
