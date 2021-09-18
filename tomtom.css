@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    max-height: 100%;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(35deg, red, purple);
+    margin: 20px;
+    place-items: center;
+}
+
+select {
+    width: 320px;
+    height: 48px;
+    padding: 0 4em 0 1em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    font-size: 16px; /* not working */
+    padding: 2px;
+    color: white;
+    border: 0;
+    appearance: none;
+    font: inherit;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+
+option {
+    color: inherit;
+    background-color: #320a28;
+    
+}
+
+button {
+    margin: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1.0em 2em;
+    border: transparent;
+    background: #5433ff;
+    background: linear-gradient(to left, #20bdff, #5433ff);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.map {
+    height: 500px;
+    max-width: 100%;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 20px;
+    border: transparent;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    text-align: center ;
+}
