@@ -1,0 +1,30 @@
+:root {
+      --background-color: #fff;
+      --button-color: #1f1f20;
+      --button-text-color: #fff;
+      --accent-color: #1f1f20;
+      --navbar-color: rgb(255, 255, 255, 0.8);
+      --navbar-links: rgb(51 65 85);
+      --navbar-links-hover: rgba(87, 87, 87, 0.082);
+    }
+    
+    [data-theme="dark"] {
+      --background-color: #1f1f20;
+      --button-color: #fff;
+      --button-text-color: #1f1f20;
+      --accent-color: #fff;
+      --navbar-color: rgb(0, 0, 0, 0.8);
+      --navbar-links: #fff;
+      --navbar-links-hover: rgba(255, 255, 255, 0.082);
+    }
+    
+    body {
+      background-color: var(--background-color);
+    }
+    
+    @media screen and (max-width: 500px) {
+      body {
+        overflow-x: hidden;
+      }
+    }
+    

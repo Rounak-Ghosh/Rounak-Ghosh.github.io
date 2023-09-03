@@ -1,0 +1,232 @@
+.Navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top: 0;
+}
+
+.bg-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #44ff9a -0.55%,
+    #44b0ff 22.86%,
+    #8b44ff 48.36%,
+    #ff6644 73.33%,
+    #ebff70 99.34%
+  );
+  filter: blur(1.2rem);
+  opacity: 30%;
+}
+
+.navbar-container {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1.2rem);
+
+  background-color: var(--navbar-color);
+  display: flex;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.navbar > .logo {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 18px;
+  flex: 1;
+}
+
+.navbar > .links {
+  display: flex;
+
+  /* width: 50%; */
+  align-items: center;
+  justify-content: space-between;
+
+  flex: 2;
+}
+
+.navbar > .links > .navbar-links {
+  display: flex;
+  gap: 25px;
+}
+.navbar > .links > .navbar-links > .a {
+  text-decoration: none;
+
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--navbar-links);
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar > .links > .navbar-links > .a:hover {
+  background-color: var(--navbar-links-hover);
+}
+.navbar > .links > .navbar-links > .a:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.social-link {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.social-link a {
+  text-decoration: none;
+  color: var(--navbar-links);
+}
+.menu {
+  display: none;
+}
+.mobile-icon {
+  display: none;
+}
+
+.profiles {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .desktopIcon {
+    display: none;
+  }
+  .links {
+    background-color: var(--background-color);
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    /* padding: 0; */
+
+    right: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    visibility: hidden;
+    padding: 80px 25px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* added transition property */
+    z-index: 1;
+
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .links > .navbar-links {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: flex-start;
+  }
+
+  .a {
+    font-size: 18px;
+    width: 100%;
+  }
+  .active .links {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* .isVisible {
+    transform: translateX(250px);
+  }
+ 
+
+  .close {
+    display: flex;
+  }
+   */
+  .menu {
+    display: inline-block;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .social-link {
+    flex-direction: column-reverse;
+  }
+  .mobile-icon {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 15px; */
+    background-color: #ececec;
+    border-radius: 5px;
+    padding: 5px 5px;
+  }
+  /*  */
+  .social-link > .active {
+    background-color: #313131;
+  }
+  .modes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* background-color: var(--background-color);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23); */
+  .lightMode {
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23);
+  }
+  .social-link > .active > .lightMode {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--accent-color);
+  }
+  .social-link > .active > .darkMode {
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.23);
+    color: var(--accent-color);
+  }
+  .modes p {
+    font-size: 14px;
+  }
+
+  .social-link > .profiles > a {
+    /* background-color: #44ff9a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-link > .profiles > a:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+.About {
+  background-color: var(--background-color);
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-container > .container {
+  display: flex;
+  gap: 50px;
+}
+.about-container > .container > img {
+  flex: 1;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  /* object-position: -50px; */
+  border-radius: 15px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.about-me {
+  flex: 1;
+}
+.about-me > h1 {
+  color: var(--accent-color);
+}
+.about-me > p {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 900px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-container > .container > img {
+    display: none;
+  }
+  .about-me p {
+    font-size: 18px;
+  }
+}

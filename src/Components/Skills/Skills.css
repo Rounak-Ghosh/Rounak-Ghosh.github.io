@@ -1,0 +1,81 @@
+.Skills {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.skills-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills-container > h1 {
+  color: var(--accent-color);
+}
+
+.skills {
+  margin-top: 10px;
+
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+}
+.skills > .containers {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.skills > .containers > li {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--accent-color);
+}
+
+.skills > .containers > li > img {
+  width: 30px;
+}
+
+.github {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 900px) {
+  .Skills {
+    margin-top: 20px;
+  }
+  .skills-container h1 {
+    padding: 15px;
+  }
+  .skills {
+    display: flex;
+    padding: 15px;
+  }
+  .skills .containers {
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills .containers li {
+    background-color: var(--background-color);
+    /* padding: 15px; */
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    /* gap: 15px; */
+    justify-content: flex-start;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.19);
+  }
+  .skills .containers:last-child {
+    display: none;
+  }
+}

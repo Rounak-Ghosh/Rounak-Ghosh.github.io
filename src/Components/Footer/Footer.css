@@ -1,0 +1,72 @@
+.footer-container {
+  background-color: #1f1f20;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-container p {
+  /* padding-top: 50px; */
+  color: #fff;
+}
+
+.form-container p span {
+  /* padding-top: 50px; */
+  color: #4d2382;
+  font-size: 18px;
+}
+
+.lets-talk {
+  padding-top: 20px;
+  width: 50%;
+}
+.lets-talk h2 {
+  color: #fff;
+}
+.lets-talk input {
+  outline: none;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 100%;
+}
+.icons {
+  display: flex;
+  gap: 25px;
+}
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gotohome a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    justify-content: space-around;
+  }
+  .form-container {
+    min-height: 12vh;
+    flex-direction: column;
+  }
+  .gotohome {
+    display: none;
+  }
+}
