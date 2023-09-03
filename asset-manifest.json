@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3efe12.css",
-    "main.js": "/static/js/main.7d9ecdd0.js",
+    "main.js": "/static/js/main.c15991e9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/clement-helardot-95YRwf6CNw8-unsplash.jpg": "/static/media/clement-helardot-95YRwf6CNw8-unsplash.e541e93f9c1c6bfe7b18.jpg",
     "static/media/WeatherForecast.png": "/static/media/WeatherForecast.38e5a98f79a7666e109d.png",
-    "static/media/MyImage.png": "/static/media/MyImage.4537f1fde842d85520d1.png",
-    "static/media/Rounak_Ghosh_SDE.pdf": "/static/media/Rounak_Ghosh_SDE.75671f3bf17c4cea39a8.pdf",
+    "static/media/MyImage.jpg": "/static/media/MyImage.04556d898c8cfde4e4ce.jpg",
+    "static/media/Rounak_Ghosh_SDE.pdf": "/static/media/Rounak_Ghosh_SDE.a3cab8045dc110c42c32.pdf",
     "static/media/Switch.mp3": "/static/media/Switch.0e44fe8040752f0ebc2b.mp3",
     "static/media/navic-1.jpg": "/static/media/navic-1.3ab87378996492578fdf.jpg",
     "static/media/sort-1.jpg": "/static/media/sort-1.bc6b417e5c90c69a943a.jpg",
@@ -26,11 +26,11 @@
     "static/media/html-1.svg": "/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/material-ui-1.svg": "/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.4b3efe12.css.map": "/static/css/main.4b3efe12.css.map",
-    "main.7d9ecdd0.js.map": "/static/js/main.7d9ecdd0.js.map",
+    "main.c15991e9.js.map": "/static/js/main.c15991e9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3efe12.css",
-    "static/js/main.7d9ecdd0.js"
+    "static/js/main.c15991e9.js"
   ]
 }
